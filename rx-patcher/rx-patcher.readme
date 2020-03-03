@@ -1,0 +1,27 @@
+Short:    rx-patcher, patches RX command dont to show a console window
+Uploader: ?
+Author:   steigerw@stud.uni-frankfurt.de
+Type:     util/rexx
+
+This small arexx-script patches the RX command not to open an console
+window. All output of your arexx scripts inclusive all error messages will
+be send to nil. That can be useful for fully tested scripts that uses their
+own method of prompting information to the user, like my AmiNet-Calcer
+which opens its own console window.
+
+This script will NOT change RX!!! It will saved the patched version under
+the filename "SYS:Rexxc/RXNIL"!!!
+
+This piece of software is placed in the public domain!
+
+Dieses kleine Arexx-Skript patcht das RX-Kommando so, daß es kein
+Console-Fenster mehr öffnet. Alle Ausgaben von Euren ARexx-Skripts inkl.
+aller Fehlermeldungen werden nach NIL geschickt. Das kann für voll
+ausgetestete Skripts, die ihre eigenen Methoden zur Informationsausgabe
+haben, wie mein AmiNet-Calcer, der ein eigenes console-Fenster öffnet,
+sinnvoll sein.
+
+Dieses Skript ändert NICHTS an RX!!! Es speichert die gepatchte Version
+unter dem Namen "SYS:Rexxc/RXNIL"!
+
+Das Skript ist öffentliches Eigentum (Public Domain)!
