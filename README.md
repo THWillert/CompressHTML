@@ -1,4 +1,4 @@
-> Weiterentwicklung eingestellt.
+> Backup von 1999 - Weiterentwicklung eingestellt.
 
 Short:        HTML (De)Compressor/Preprozessor (German)  
 Author:       thorsten.willert@gmx.de Thorsten Willert  
