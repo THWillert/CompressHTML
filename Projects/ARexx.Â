@@ -1,0 +1,10 @@
+SRC     = "SYS:"
+DEST    = "RAM:"
+PATTERN = "#?.(rx|rexx)"
+FUNC
+"(SRC_TO_CACHE)"
+"CHECK_FILETYPE_AUTO"
+"ARexx_Compress_1"
+"COPY_TIMESTAMP"
+"(BUFFER_TO_DEST)"
+ENDFUNC

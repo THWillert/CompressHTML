@@ -1,0 +1,10 @@
+SRC     = "SYS:"
+DEST    = "RAM:"
+PATTERN = "#?"
+FUNC
+"(SRC_TO_CACHE)"
+"CHECK_FILETYPE_AUTO"
+"AmigaGuide_Compress_1"
+"COPY_TIMESTAMP"
+"(BUFFER_TO_DEST)"
+ENDFUNC
