@@ -1,0 +1,4 @@
+Kopiert Datum und Uhrzeit der
+Quelldateien, zu den Dateien
+im Puffer bzw. ohne Cache zu
+den Dateien im Zielverzeichnis.

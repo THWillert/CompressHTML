@@ -1,0 +1,5 @@
+Schnelle, hohe Kompression.
+
+Enfernt Leerzeilen vor dem ersten @node,
+alle Zeilen zwischen den @nodes und
+Leerzeichen am Ende jeder Zeile.

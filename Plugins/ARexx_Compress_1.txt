@@ -1,0 +1,6 @@
+Sehr schnelle, hohe Kompression.
+
+Nur ein Startscript für:
+RexxOpt von Ulrich Sibiller
+
+mit den Optionen FC und KBL.

@@ -1,0 +1,4 @@
+Kopiert alle Dateien im
+Quellverzeichnis, die nicht dem
+Namensmuster entsprechen, ins
+Zielverzeichnis.

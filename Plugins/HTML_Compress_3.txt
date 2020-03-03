@@ -1,0 +1,13 @@
+Schnelle, gute Kompression.
+
+Enfernt Tabulatoren,
+doppelte Leerzeichen,
+Leerzeichen am Zeilenende bzw. Zeilenanfang,
+Leerzeilen und einzeilige Kommentare.
+
+Berücksichtigt PRE-formatierten Text und
+Scripts.
+
+Kein sonstige Optimierung.
+
+Datei bleibt lesbar.

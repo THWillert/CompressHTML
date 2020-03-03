@@ -1,0 +1,8 @@
+Dekomprimierer!
+
+Nicht sehr schnell.
+
+Formatiert anhand einer
+Datentabelle, komprimierte
+HTML-Dateien in lesbare
+HTML-Dateien um.

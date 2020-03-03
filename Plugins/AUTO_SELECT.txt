@@ -1,0 +1,5 @@
+Automatische Dateiauswahl, über
+nicht gesetzte Archivbits.
+
+Muß immer als erste Funktion
+aufgerufen werden.

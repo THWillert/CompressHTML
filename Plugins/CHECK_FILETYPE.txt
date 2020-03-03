@@ -1,0 +1,4 @@
+Testet ob die Quelldatei zu dem
+Nachfolgenden! Plugin paßt.
+
+Wenn nicht, erfolgt eine Rückfrage.

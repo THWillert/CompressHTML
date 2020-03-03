@@ -1,0 +1,143 @@
+Preprozessor
+
+Befehle:
+------------------------------------------------------
+
+<!--#DATE Optionen -->: aktuelles Datum
+<!--#FILEDATE 'Datei' Optionen -->: Speicherdatum
+der Datei/Quelldatei
+
+Optionen:
+*d:    Tag in Zahlen
+dd:    Tag in Zahlen, immer zweistellig
+ddd:   Tag abgekürzt
+day:   Tag ausgeschrieben
+*m:    Monat in Zahlen
+mm:    Monat in Zahlen, immer zweistellig
+mmm:   Monat abgekürzt
+month: Monat ausgeschrieben
+yy:    Zweistelliges Jahr
+yyyy:  Vierstelliges Jahr
+keine Angabe ergibt dd. mmm. yy
+
+-------------------------------------------------------
+
+<!--#TIME Optionen -->: aktuelles Datum
+<!--#FILETIME 'Datei' Optionen -->: Speicherzeit der
+Datei/Quelldatei
+
+Optionen:
+HH: Stunden
+MM: Minuten
+SS: Sekunden
+keine Angabe ergibt HH:MM:SS
+
+-------------------------------------------------------
+
+<!--#FILESIZE 'Datei' Optionen -->: Größe der
+Datei/Quelldatei.
+
+Optionen:
+KB: Ausgabe in Kilobyte
+MB: Ausgabe in Megabyte
+AUTO: Das passende eben, mit Abkürzung
+Keine Angabe: Ausgabe in der Quelldatei Byte
+
+-------------------------------------------------------
+
+<!--#IMGSIZE 'Datei' Optionen -->:
+Dimensionen der angegebenen Grafik.
+
+Optionen:
+HEIGHT: Ausgabe der Höhe
+WIDTH: Ausgabe der Weite
+keine Angaben: HEIGTH=x WIDTH=x
+
+-------------------------------------------------------
+
+<!--#FILENAME Optionen -->:
+Name der QuellDatei
+
+Optionen:
+FULL: Der komplette Pfad mit Dateinamen
+PATH: Nur der Pfad zur Datei
+keine Angaben: Ausgabe des Dateinamens
+
+-------------------------------------------------------
+
+<!--## Kommentar -->:
+wird vom Preprozessor entfernt.
+
+<!--#INCLUDE Pfad/Datei -->:
+Datei wird an dieser Zeile eingefügt.
+
+------------------------------------------------------
+
+<!--#DEFINE Bezeichner -->
+<!--#DEFINE Macro 'Definition' --> oder
+<!--#DEFINE Macro(v1,v2 ... v10) 'Definition' -->
+oder
+<!--#DEFINE Macro #BLOCK --> oder
+<!--#DEFINE Macro(v1, ...v100) #BLOCK --> und
+Definition
+<!--#ENDDEF-->
+
+Das Macro wird durch die Definition
+ersetzt.
+An Macros können bis zu 100 Variablen
+übergeben werden.
+
+<!--#UNDEF Macro -->:
+Setzt die Definition des angegeben Macros
+zurück.
+
+------------------------------------------------------
+
+Kontrollstruktur mit #IFDEF:
+
+<!--#IFDEF Bezeichner -->
+Abfrage des Bezeichners
+<!--#IFNDEF Bezeichner -->
+Nicht- Abfrage des Bezeichners
+<!--#ELSE--> oder <!--#ELSEDEF-->
+Alternativ Zweig
+<!--#ENDIF-->
+
+Keine Schachtelung möglich!
+
+------------------------------------------------------
+
+Alles zwischen
+<!--#HTMLCODE Optionen -->
+und
+<!--#ENDHTMLCODE-->
+wird in sichtbaren HTML-Code umgewandelt.
+
+Optionen:
+&: macht Sonderzeichen sichtbar.
+PRE: macht PRE- formatierten Text daraus.
+
+------------------------------------------------------
+
+Alles zwischen
+<!--#SORT Optionen -->
+und
+<!--#ENDSORT-->
+wird zeilenweise sortiert
+
+Optionen:
+LINK: Nach Links sortieren
+HREF oder URL: Nach URL sortieren
+CASE: Groß- und Kleinschreibung beachten
+
+
+------------------------------------------------------
+
+<!--#CLI 'Befehl' Option -->:
+Die Ausgabe des CLI-Befehls, wird
+an dieser Zeile eingefügt.
+
+Option:
+PRE: Ausgabe steht zwischen <PRE> und </PRE>.
+
+------------------------------------------------------

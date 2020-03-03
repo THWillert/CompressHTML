@@ -1,0 +1,12 @@
+Schnelle, sehr hohe Kompression.
+
+Enfernt Tabulatoren, doppelte Leerzeichen,
+überflüssige Leerzeichen zwischen den Tags,
+Leerzeilen, Zeilenvorschübe und
+einzeilige Kommentare.
+
+Kein sonstige Optimierung.
+
+Aus der Datei wird, bis auf
+PRE-formatierten Text und Scripts,
+ein "Einzeiler".

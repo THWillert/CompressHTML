@@ -1,0 +1,5 @@
+Testet ob die Quelldatei zu dem
+Nachfolgenden! Plugin paﬂt.
+
+Wenn nicht, wird sie ins
+Zielverzeichnis kopiert.

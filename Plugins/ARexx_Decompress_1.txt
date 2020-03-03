@@ -1,0 +1,6 @@
+Sehr schnelle, Dekompression.
+
+Nur ein Startscript für:
+RexxOpt von Ulrich Sibiller
+
+mit der Option DEOPT.

@@ -1,0 +1,2 @@
+Kopiert die ausgwählten Dateien
+in den Cache.
