@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><HTML><HEAD><TITLE>HTML_Preprozessor- Include Dateien</TITLE> <META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1"><META HTTP-EQUIV="Erstellt" CONTENT="30.01.2000"><META NAME="Content-Language" CONTENT="de"><META NAME="generator" CONTENT="CompressHTML/HTML_Preprozessor"><META NAME="author" CONTENT="Thorsten Willer"><META NAME="publisher" CONTENT="Thorsten Willert"><META NAME="copyright" CONTENT="Thorsten Willert"><META NAME="description" CONTENT="Dokumentation f&uuml;r CompressHTML"><BASE TARGET="View"></HEAD><BODY BGCOLOR="#BBBBBB"><DIV ALIGN=CENTER><TABLE BORDER=0 WIDTH="100%" BGCOLOR="#DDDDDD"><TR><TD ALIGN=RIGHT> <A HREF="Allgemeines.HTML">[Zur&uuml;ck]</A> <A HREF="Kommentare.HTML">[Weiter]</A> </TD></TR></TABLE> <BR CLEAR=ALL><H2>Include Dateien</H2> <TABLE BGCOLOR="#CCCCCC" CELLSPACING=3 BORDER=0><TR><TD COLSPAN=2>In den beiliegenden Include- Dateien sind nachfolgende Macros vordefiniert:<BR></TD></TR><TR><TD VALIGN=TOP><B>DOCTYPE_def.inc</B><BR> </TD><TD><PRE>
+&lt;!--#DEFINE HTML_4_Trans '&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Transitional//EN&quot;&gt;' --&gt;
+&lt;!--#DEFINE HTML_4_Frame '&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0 Frameset//EN&quot;&gt;' --&gt;
+&lt;!--#DEFINE HTML_4 '&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot;&gt;' --&gt;
+&lt;!--#DEFINE HTML_32 '&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;' --&gt;
+&lt;!--#DEFINE HTML_2 '&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 2.0//EN&quot;&gt;' --&gt;
+</PRE>
+</TD></TR><TR><TD VALIGN=TOP><B>font_def.inc</B><BR> </TD><TD><PRE>
+&lt;!--#DEFINE &lt;FONT_RD&gt; '&lt;FONT COLOR=red&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT_GN&gt; '&lt;FONT COLOR=green&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT_BL&gt; '&lt;FONT COLOR=blue&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT_YW&gt; '&lt;FONT COLOR=yellow&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT_MN&gt; '&lt;FONT COLOR=maroon&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT_TL&gt; '&lt;FONT COLOR=teal&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT(v1)&gt; '&lt;FONT COLOR=v1&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT+1&gt; '&lt;FONT SIZE=&quot;+1&quot;&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT-1&gt; '&lt;FONT SIZE=&quot;-1&quot;&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT(_v1)&gt; '&lt;FONT SIZE=_v1&gt;' --&gt;
+&lt;!--#DEFINE &lt;FONT_SC(_v1,_v2)&gt; '&lt;FONT SIZE=_v1 COLOR=_v2&gt;' --&gt;
+</PRE>
+</TD></TR><TR><TD VALIGN=TOP><B>glob_def.inc</B><BR> </TD><TD><PRE>
+&lt;!--#DEFINE _Home 'name.server.de/sonstwas' --&gt;
+&lt;!--#DEFINE _Mail 'name@mail.net' --&gt;
+&lt;!--#DEFINE _Autor 'Name' --&gt;
+</PRE>
+<HR><BR>Bitte die eigenen Daten einsetzen.<BR>Die Macros werden in <B>MetaVar_def.inc</B> und <B>std_def.inc</B> weiterverwendet.<BR> </TD></TR><TR><TD VALIGN=TOP><B>MetaVar_def.inc</B><BR> </TD><TD><PRE>
+&lt;META HTTP-EQUIV=&quot;Content-Type&quot; CONTENT=&quot;text/html;CHARSET=iso-8859-1&quot;&gt;
+&lt;META HTTP-EQUIV=&quot;Erstellt&quot; CONTENT=&quot;&lt;!--#FILEDATE dd.mm.yyyy--&gt;&quot;&gt;
+&lt;META NAME=&quot;Content-Language&quot; CONTENT=&quot;de&quot;&gt;
+&lt;META NAME=&quot;generator&quot; CONTENT=&quot;CompressHTML/HTML_Preprozessor&quot;&gt;
+&lt;META NAME=&quot;author&quot; CONTENT=&quot;_Autor&quot;&gt;
+&lt;META NAME=&quot;publisher&quot; CONTENT=&quot;_Autor&quot;&gt;
+&lt;META NAME=&quot;copyright&quot; CONTENT=&quot;_Autor&quot;&gt;
+</PRE>
+</TD></TR><TR><TD VALIGN=TOP><B>std_def.inc</B><BR> </TD><TD><PRE>
+&lt;!--#DEFINE &lt;BODY_std&gt; '&lt;BODY BGCOLOR=&quot;#BBBBBB&quot;&gt;' --&gt;
+&lt;!--#DEFINE &lt;H1_I&gt; '&lt;H1&gt;&lt;I&gt;' --&gt;
+&lt;!--#DEFINE &lt;/H1_I&gt; '&lt;/I&gt;&lt;/H1&gt;' --&gt;
+&lt;!--#DEFINE &lt;DIV_C&gt; '&lt;DIV ALIGN=CENTER&gt;' --&gt;
+&lt;!--#DEFINE &lt;DIV_R&gt; '&lt;DIV ALIGN=RIGHT&gt;' --&gt;
+&lt;!--#DEFINE &lt;DIV_L&gt; '&lt;DIV ALIGN=LEFT&gt;' --&gt;
+&lt;!--#DEFINE &lt;IMG(_v1,_v2,_v3)&gt; '&lt;IMG SRC=&quot;_v1&quot; ALT=&quot;_v2&quot; &lt;!--#IMGSIZE '_v1' --&gt; BORDER=_v3&gt;' --&gt;
+&lt;!--#DEFINE &lt;Autor(_v1)&gt;  '&lt;DIV ALIGN=RIGHT&gt;\n&lt;FONT SIZE=&quot;-1&quot;&gt;&lt;I&gt;&gt;!--#FILEDATE dd. month yyyy--&gt;, _v1&lt;/I&gt;&lt;/FONT&gt;\n&lt;/DIV&gt;' --&gt;
+&lt;!--#DEFINE &lt;std_Date&gt; '&lt;!--#FILEDATE dd. month yyyy --&gt;' --&gt;
+&lt;!--#DEFINE &lt;MAIL(_v1)&gt; '&lt;A HREF=&quot;mailto:_Mail?subject=_v1&quot;&gt;' --&gt;
+&lt;!--#DEFINE &lt;HOME&gt; '&lt;A HREF=&quot;http://_Home&quot;&gt;' --&gt;
+</PRE>
+</TD></TR><TR><TD VALIGN=TOP><B>table_def.inc</B><BR> </TD><TD><PRE>
+&lt;!--#DEFINE &lt;TABLE(v1,v2,v3,v4,v5)&gt; '&lt;TABLE WIDTH=v1 BORDER=v2 CELLPADDING=v3 CELLSPACING=v4 BGCOLOR=v5&gt;' --&gt;
+&lt;!--#DEFINE &lt;TRow&gt; '&lt;TR&gt;\n &lt;TD&gt;' --&gt;
+&lt;!--#DEFINE &lt;/TRow&gt; '&lt;/TD&gt;\n&lt;/TR&gt;\n' --&gt;
+&lt;!--#DEFINE MARKER '&lt;/TD&gt;\n &lt;TD&gt;' --&gt;
+&lt;!--#DEFINE &lt;TABLE_std&gt; '&lt;TABLE BORDER=0 WIDTH=&quot;90%&quot; CELLSPACING=3 BGCOLOR=&quot;#CCCCCC&quot;&gt;' --&gt;
+&lt;!--#DEFINE &lt;TD_VT&gt; '&lt;TD VALIGN=TOP&gt;' --&gt;
+&lt;!--#DEFINE &lt;TD_AC&gt; '&lt;TD ALIGN=CENTER&gt;' --&gt;
+&lt;!--#DEFINE &lt;TD_AR&gt; '&lt;TD ALIGN=RIGHT&gt;' --&gt;
+</PRE>
+<HR><BR>F&uuml;r diese Macros, bitte die Beispiel- Datei <B>Tabelle.HTML</B> ansehen.<BR> </TD></TR></TABLE><BR CLEAR=ALL><TABLE BORDER=0 WIDTH="100%" BGCOLOR="#DDDDDD"><TR><TD ALIGN=RIGHT> <A HREF="Allgemeines.HTML">[Zur&uuml;ck]</A> <A HREF="Kommentare.HTML">[Weiter]</A> </TD></TR></TABLE> <BR CLEAR=ALL></DIV><HR><DIV ALIGN=RIGHT><FONT SIZE="-1"><I>30.&nbsp;Januar&nbsp;2000, Thorsten Willert</I></FONT></DIV> </BODY></HTML>
