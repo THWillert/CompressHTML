@@ -1,0 +1,36 @@
+<TR>
+    <TD_VT>
+    Einfache Macros:<BR>
+    &lt;!--#DEFINE Macro 'Definition' --&gt;<BR>
+    </TD>
+    <TD>
+    Der Befehl mu&szlig; allein in einer Zeile stehen!<BR><BR>
+    Ersetzt das angegebene Macro durch die Definition.<BR>
+    Die Definition mu&szlig; in einfachen Anf&uuml;hrungszeichen stehen!<BR>
+    Einen Zeilenbruch bei der Ausgabe erh&auml;lt man durch ein <B>\n</B><BR>
+    innerhalbe der Definition.<BR><BR>
+    Es werden <I>keine</I> ganzen W&ouml;rter ersetzt, sondern die Zeichenfolge!<BR>
+    Sonst w&auml;re z.B. folgendes nicht m&ouml;glich:<BR>
+    Macroname = <Beispiel>&lt;DIV_C&gt;</Beispiel><BR>
+    und in der HTML-Datei schreibt man:<BR>
+    <Beispiel>&lt;DIV_C&gt;&lt;B&gt;</Beispiel><BR>
+    sowas w&uuml;rde nie &uuml;bersetzt werden k&ouml;nnen.<BR><HR><BR>
+    <B>Beispiele:</B><BR><BR>
+    <Beispiel>&lt;!--#DEFINE Author 'Thorsten Willert' --&gt;</Beispiel> ergibt:<BR>
+    <!--#DEFINE Atr 'Thorsten Willert' -->
+    <Beispiel>Author</Beispiel> Atr<BR><BR>
+    In diesem Beispiel durfte ich im Quelltext folglich<BR>
+    nicht den Macronamen des Beispiels verwenden, sonst w&auml;re<BR>
+    auch dieser ersetzt worden.<BR><BR>
+    Das &lt;TABLE&gt;-Tag  sieht f&uuml;r dieses Dokument folgenderma&szlig;en aus:<BR>
+    <Beispiel>&lt;!--#DEFINE &lt;TABLE_std&gt; '&lt;TABLE WIDTH=&quot;90%&quot; CELLSPACING=3 BORDER=0 BGCOLOR=&quot;#DDDDDD&quot;&gt;' --&gt;</Beispiel><BR><BR>
+    Das ganze ist dazu noch in einer Include-Datei hinterlegt,<BR>
+    damit man Projekt- einheitliche Tabellen bekommen w&uuml;rde.<BR>
+    Dazu gen&uuml;gt noch eine einzige &Auml;nderung der Include-Datei<BR>
+    und alle Tabellen, in s&auml;mtlichen Dateien, bekommen z.B. eine<BR>
+    andere Hintergrundfarbe.<BR>
+    Dasselbe mit der Textfarbe der Beispiele. Einfach ein Macro in eine<BR>
+    Include-Datei, in der s&auml;mtliche Definitionen stehen und schon gen&uuml;gt<BR>
+    eine &Auml;nderung und alle haben eine andere Farbe.<BR>
+    </TD>
+</TR>

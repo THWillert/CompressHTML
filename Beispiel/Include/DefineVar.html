@@ -1,0 +1,27 @@
+<TR>
+    <TD_VT>
+    Macros mit Variablen:<BR>
+    &lt;!--#DEFINE Macro(Var1,...Var100) 'Definition' --&gt;<BR>
+    </TD>
+    <TD>
+    Der Befehl mu&szlig; allein in einer Zeile stehen!<BR><BR>
+    Ersetzt das angegebene Macro durch die Definition.<BR>
+    Zwischen Macro und der &ouml;ffnenden Klammer, darf kein<BR>
+    Leerzeichen stehen.<BR>
+    Die Definition mu&szlig; in einfachen Anf&uuml;hrungszeichen stehen!<BR>
+    Einen Zeilenbruch bei der Ausgabe erhält man durch ein <B>\n</B><BR>
+    innerhalbe der Definition.<BR><BR>
+    Dem Macro k&ouml;nnen bis zu 100 Variablen, durch Kommata getrennt<BR>
+    und in einfachen Anf&uuml;hrungszeichen stehend, &uuml;bergeben werden.<BR>
+    Es werden <I>keine</I> ganzen W&ouml;rter ersetzt, sondern die Zeichenfolge!<BR>
+    Dies gilt f&uuml;r die Macros wie die Variablen-Namen.<BR><HR><BR>
+    <B>Beispiele:</B><BR><BR>
+    <Beispiel>&lt;!--#DEFINE FONT_SC(sz,cl) '&lt;FONT SIZE=sz COLOR=cl&gt;' --&gt;</Beispiel><BR>
+    ergibt mit den Aufrufen:<BR>
+    <!--#DEFINE FNT_SC(sz,cl) '<FONT SIZE=sz COLOR=cl>' -->
+    <Beispiel>FONT_SC('+2','&quot;#FF0000&quot;')</Beispiel>
+    FNT_SC('+2','"#FF0000"')Hallo</FONT><BR>
+    <Beispiel>FONT_SC('-2','blue')</Beispiel>
+    FNT_SC('-2','blue')Hallo</FONT><BR>
+    </TD>
+</TR>

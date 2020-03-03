@@ -1,0 +1,28 @@
+<TR>
+    <TD_VT>
+    Gr&ouml;&szlig;e einer Datei:<BR>
+    &lt;!--#FILESIZE--&gt; oder<BR>
+    &lt;!--#FILESIZE Option--&gt; oder<BR>
+    &lt;!--#FILESIZE 'Datei' Option --&gt;
+    </TD>
+    <TD>
+    F&uuml;gt an diese Stelle die Gr&ouml;&szlig;e der Datei ein.<BR><BR>
+    Der Dateipfad / Name mu&szlig; in einfachen Anf&uuml;hrungszeichen stehen.<BR>
+    Ohne Pfadangabe wird die Datei im Pfad der Quelldatei gesucht.<BR>
+    <!--#FILESIZE Auto --><BR><BR>
+
+    <Beispiel>&lt;!--#FILESIZE '../CompressHTML' KB --&gt;</Beispiel> ergibt:<BR>
+    <!--#FILESIZE '../CompressHTML' KB --><BR><BR>
+
+    <Beispiel>&lt;!--#FILESIZE MB --&gt;</Beispiel> ergibt:<BR>
+    <!--#FILESIZE mb --><BR>
+    Die vorhergehenden Gr&ouml;&szlig;en k&ouml;nnen Aufgrund der Preprozessor-
+    Anweisungen innerhalb der Datei nicht stimmen!<BR><BR>
+
+    <Beispiel>&lt;!--#FILESIZE 'Include/def1.inc' Auto --&gt;</Beispiel> ergibt:<BR>
+    <!--#FILESIZE 'Include/def1.inc' Auto --><BR><BR>
+
+    Das ganze ist z.B. zur Information bei Downloads oder gr&ouml;&szlig;eren<BR>
+    Bilddateien gedacht.<BR>
+    </TD>
+</TR>

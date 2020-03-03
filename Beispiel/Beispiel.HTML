@@ -1,0 +1,74 @@
+<!--#INCLUDE DOCTYPE_def.inc -->
+HTML_4_Trans
+<HTML>
+<!--## Saemtliche Include-Dateien koennen auch ueber eine -->
+<!--## Projektspezifische Include-Datei eingebunden werden! -->
+
+<!--## Globale Standarddateien in CompressHTML/Include -->
+<!--#INCLUDE std_def.inc -->
+<!--#INCLUDE table_def.inc -->
+
+<!--## Projektdatei in Projektpfad/Include -->
+<!--#INCLUDE def1.inc -->
+<HEAD>
+<TITLE>Preprozessor Beispiel-Datei</TITLE>
+
+<!--## Hier stehen die globalen Meta-Tags: CompressHTML/Include-->
+<!--#INCLUDE MetaVar_def.inc -->
+
+<!--## Hier stehen die Projektspezifischen: Projektpfad/Include -->
+<!--#INCLUDE Meta_def.inc -->
+</HEAD>
+
+<BODY_std>
+<!--#DEFINE _OK -->
+<!--#IFNDEF _OK -->
+<P><FONT SIZE=+2 COLOR=red>Wer das hier lesen kann,<BR>
+sollte die Datei erst mit dem Preprozessor &uuml;bersetzen ;-) !</FONT><P>
+<!--#ENDIF-->
+
+<DIV_C>
+
+   <H1_I>Anwendung des Preprozessors</H1_I>
+   <HR>
+   <TABLE_std>
+      <TR>
+         <TD COLSPAN=0 BGCOLOR=lightseagreen>
+         <B>Hier sind ein paar praktische Beispiele f&uuml;r den Einsatz des Preprozessors.</B><BR>
+         </TD>
+      </TR>
+
+      <!--## Der Grossteil der Beschreibung wird eingebunden -->
+      <!--## Macht das Ganze Uebersichtlicher, oder? -->
+
+      <!--#INCLUDE Kommentare.html -->
+      <!--#INCLUDE Date.html -->
+      <!--#INCLUDE Time.html -->
+      <!--#INCLUDE FileDate.html -->
+      <!--#INCLUDE FileTime.html -->
+      <!--#INCLUDE FileName.html -->
+      <!--#INCLUDE FileSize.html -->
+      <!--#INCLUDE ImgSize.html -->
+      <!--#INCLUDE Define.html -->
+      <!--#INCLUDE DefineVar.html -->
+<!--## Wird nicht Eingerueckt, da in diesen Dateien PRE- formatierter -->
+<!--## Text steht, der sonst auch eingerueckt wuerde -->
+<!--#INCLUDE DefineBlock.html -->
+<!--#INCLUDE DefineBlockVar.html -->
+
+      <!--#INCLUDE Undef.html -->
+
+<!--## Wird nicht Eingerueckt, da in diesen Dateien PRE- formatierter -->
+<!--## Text steht, der sonst auch eingerueckt wuerde -->
+<!--#INCLUDE Include.html -->
+<!--#INCLUDE HTMLCode.html -->
+
+      <!--#INCLUDE Cli.html -->
+      <!--#INCLUDE Anmerkung.html -->
+
+   </TABLE>
+</DIV>
+<HR><BR>
+<Autor('Thorsten Willert')>
+</BODY>
+</HTML>

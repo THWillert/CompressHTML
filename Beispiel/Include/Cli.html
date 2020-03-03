@@ -1,0 +1,26 @@
+<TR>
+    <TD_VT>
+    Ausgabe von CLI- Kommandos:<BR>
+    &lt;!--#CLI 'Befehl' Option --&gt;<BR>
+    </TD>
+    <TD>
+    Der Befehl mu&szlig; allein in einer Zeile stehen!<BR><BR>
+    F&uuml;gt an diese Stelle die Ausgabe der CLI- Kommandos ein.<BR><BR>
+    <B>Option:</B> <CODE>PRE</CODE>, die Ausgabe erfolgt PRE- formatiert.<BR><BR>
+    Die Ausgaben eines Befehls / Scripts d&uuml;rfen wiederrum<BR>
+    Preprozessorbefehle (au&szlig;er #INCLUDE und #CLI) enthalten.<BR><HR><BR>
+    <B>Beispiel:</B><BR><BR>
+    Ausgabe der aktuellen Verzeichnisses mit <CODE>list</CODE>:<BR>
+    <Beispiel>&lt;!--#CLI 'list' PRE --&gt;</Beispiel>
+    <!--#CLI 'list' PRE --><BR>
+    ganz einfach, oder?<BR><BR>
+    Bei einem falschen Befehl passiert halt folgendes:<BR>
+    <Beispiel>&lt;!--#CLI 'lst' PRE --&gt;</Beispiel>
+    <!--#CLI 'lst' PRE --><BR>
+    genau, gar nichts.<BR><BR>
+    Bei einer falschen Option dagegen:<BR>
+    <Beispiel>&lt;!--#CLI 'list lformat Y%' PRE --&gt;</Beispiel>
+    <!--#CLI 'list lformat Y%' PRE --><BR>
+    tja, Pech gehabt. :-))<BR>
+    </TD>
+</TR>

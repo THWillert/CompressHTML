@@ -1,0 +1,30 @@
+<TR>
+    <TD_VT>
+    Macro Definition l&ouml;schen:<BR>
+    &lt;!--#UNDEF Macro Option --&gt;<BR>
+    </TD>
+    <TD>
+    Der Befehl mu&szlig; allein in einer Zeile stehen!<BR><BR>
+    Ab dieser Zeile ist die Macro-Definition, in dieser Datei<BR>
+    nicht mehr g&uuml;ltig.<BR>
+    Ein Macro mit dem gleichen Namen, kann danach nicht mehr<BR>
+    erstellt werden.<BR>
+    Die <B>Option </B><CODE>CLEAR</CODE> gibt an , ob das Macro aus dem<BR>
+    Text gel&ouml;scht wird.<BR><HR><BR>
+    <B>Beispiel:</B><BR>
+    l&ouml;schen der oberen Definition:<BR>
+    <Beispiel>&lt;!--#UNDEF FONT_SC(sz,cl) --&gt;</Beispiel> ergibt:<BR>
+    <!--#UNDEF FNT_SC(sz,cl) -->
+    FNT_SC(+2,"#FF0000")Hallo</FONT><BR><BR>
+    mit l&ouml;schen des Macros:<BR>
+    <Beispiel>&lt;!--#UNDEF FONT_SC(sz,cl) CLEAR --&gt;</Beispiel> ergibt:<BR>
+    <!--#UNDEF FNT_SC(sz,cl) CLEAR -->
+    FNT_SC(+2,"#FF0000")Hallo</FONT><BR><BR>
+    Nat&uuml;rlich mu&szlig;te hier das Macro im Dokument anders hei&szlig;en,<BR>
+    als im Beispiel, sonst w&auml;re dieses auch ersetzt worden.<BR><BR>
+    Schreibt man auch das Macro in Spitze Klammern,<BR>
+    wird es grunds&auml;tzlich nicht ausgegeben.<BR>
+    Daf&uuml;r beschwert im Fehlerfall ein Programm wie CheckHTML,<BR>
+    oder der W3-Validator &uuml;ber den &quot;unbekannten&quot; TAG.<BR>
+    </TD>
+</TR>

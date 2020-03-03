@@ -1,0 +1,25 @@
+<TR>
+    <TD_VT>
+    Einfacher Definitionsblock:<BR>
+    &lt;!--#DEFINE Macro #BLOCK --&gt; und<BR>
+    &lt;!--#ENDDEF-->
+    </TD>
+    <TD>
+    Die Befehle m&uuml;&szlig;en jeweils allein in einer Zeile stehen!<BR><BR>
+    Ersetzt das angegebene Macro durch alles was zwischen den beiden<BR>
+    Anweisungen steht.<BR>
+    Es werden <I>keine</I> ganzen W&ouml;rter ersetzt, sondern die Zeichenfolge!<BR>
+    <HR>
+    <BR>
+    <B>Beispiel:</B><BR><BR>
+    <Beispiel>&lt;!--#DEFINE &lt;TABLE&gt; #BLOCK --&gt;</Beispiel>
+    <!--#HTMLCODE PRE -->
+<TABLE BORDER=0
+       WIDTH="100%"
+       CELLPADDING=3
+       CELLSPACING=4
+       BGCOLOR=lightseagreen>
+    <!--#ENDHTMLCODE-->
+    <Beispiel>&lt;!--#ENDDEF--&gt;</Beispiel><BR>
+    </TD>
+</TR>

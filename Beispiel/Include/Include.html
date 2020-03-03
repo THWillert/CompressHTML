@@ -1,0 +1,82 @@
+      <TR>
+         <TD_VT>
+         Include Dateien:<BR>
+         &lt;!--#INCLUDE Datei --&gt;<BR>
+         </TD>
+         <TD>
+         Der Befehl mu&szlig; allein in einer Zeile stehen!<BR><BR>
+         F&uuml;gt an diese Stelle die angegebene Datei ein.<BR><BR>
+         Die Einr&uuml;ckung des Befehls (in Leerzeichen), hat einen<BR>
+         entsprechenden Offset der Include- Datei zur Folge.<BR><BR>
+         Dabei wird diese an folgenden Stellen gesucht:<BR>
+         <OL>
+            <LI>Im angegebenen Pfad + Datei</LI>
+            <LI><B>Include</B> Verzeichnis im Programmpfad (von CompressHTML)</LI>
+            <LI><B>Inc</B> Verzeichnis im Programmpfad (von CompressHTML)</LI>
+            <LI><B>Include</B> Verzeichnis im Pfad der Quelldatei</LI>
+            <LI><B>Inc</B> Verzeichnis im Pfad der Quelldatei</LI>
+         </OL>
+         wird sie dort nicht gefunden, kommt eine R&uuml;ckfrage ob man dies,<BR>
+         ignorieren oder per Dateirequester eine neue ausw&auml;hlen will.<BR>
+         Die Original Datei wird dabei nicht korrigiert!<BR><BR>
+         Die Dateien d&uuml;rfen dabei beliebig tief verschachtelt werden,<BR>
+         allerdings nur 25 Include- Dateien pro Datei.<BR><BR>
+         In Include-Dateien d&uuml;rfen wiederrum Befehle enthalten sein.<BR><HR><BR>
+         <B>Beispiele:</B><BR><BR>
+         Einige wurden schon erw&auml;hnt z.B. zum Einf&uuml;gen von Projektspezifischen<BR>
+         Macros bzw. globalen im Programmpfad von CompressHTML.<BR><BR>
+         Ein weitere Sache w&auml;re das Einf&uuml;gen der Meta-Tags wobei z.B. das<BR>
+         Erstellungdatum bzw. der Name des Authors durch Macros ersetzt<BR>
+         werden kann.<BR><BR>
+         Das Einf&uuml;gen von Inhaltsverzeichnissen in FRAME-Teile bzw.
+         in den NOFRAME- Bereich ist damit auch ohne weiteres m&ouml;glich.<BR>
+         Die Frame-Definition sieht dann z.B. wie folgt aus:<BR>
+         <!--#UNDEF HTML_4_Frame -->
+         <!--#UNDEF HTML_4 -->
+
+         <!--#HTMLCODE PRE --><!--
+HTML_4_Frame
+<HTML>
+&lt;!--#INCLUDE DOCTYPE_def.HTML --&gt;
+<HEAD>
+    <TITLE>Homepage</TITLE>
+    &lt;!--#INCLUDE Meta.HTML --&gt;
+    <META NAME="robots" CONTENT="INDEX,FOLLOW">
+    <META NAME="revisit-after" CONTENT="7 days">
+
+</HEAD>
+
+<FRAMESET ROWS="15%, 85%">
+    <FRAME SRC="TITLE.HTML" NORESIZE SCROLLING=NO>
+        <FRAMESET COLS="25%,75%">
+            <FRAME SRC="INHALT.HTML" NAME="Inhalt" MARGINWIDTH=5 MARGINHEIGHT=5>
+            <FRAME SRC="START.HTML" NAME="View" MARGINWIDTH=5 MARGINHEIGHT=5>
+         </FRAMESET>
+</FRAMESET>
+
+<NOFRAMES>
+    <BODY BGCOLOR="#BBBBBB">
+        <DIV ALIGN=CENTER>
+        <H1><I>Meine Homepage</I></H1>
+        <HR>
+            <TABLE BORDER=0 WIDTH="100%">
+                <TR>
+                    <TD WIDTH=200>
+                    &lt;!--#INCLUDE Inhalt.HTML --&gt;
+                    </TD>
+                    <TD BGCOLOR="#000000" VALIGN=TOP>
+                    &lt;!--#INCLUDE Neues.HTML --&gt;
+                    </TD>
+                </TR>
+            </TABLE>
+        </DIV>
+    </BODY>
+</NOFRAMES
+</HTML>
+       --><!--#ENDHTMLCODE-->
+         <BR>
+         Wie man sieht besteht der NOFRAME-Teil eigentlich nur<BR>
+         aus Include-Dateien, die man in die FRAME-Dateien ebenfalls,<BR>
+         mittels #INCLUDE, einf&uuml;gt.<BR>
+         </TD>
+      </TR>

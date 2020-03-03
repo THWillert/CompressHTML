@@ -1,0 +1,35 @@
+<TR>
+    <TD_VT>
+    Einfacher Definitionsblock:<BR>
+    &lt;!--#DEFINE Macro(v1,...v100) #BLOCK --&gt; und<BR>
+    &lt;!--#ENDDEF-->
+    </TD>
+    <TD>
+    Die Befehle m&uuml;&szlig;en jeweils allein in einer Zeile stehen!<BR><BR>
+    Ersetzt das angegebene Macro durch alles was zwischen den beiden<BR>
+    Anweisungen steht.<BR>
+    An das Macro k&ouml;nnen wiederrumm bis zu 100 Variablen &uuml;bergeben werden.<BR>
+    Es werden <I>keine</I> ganzen W&ouml;rter ersetzt, sondern die Zeichenfolge!<BR>
+    <HR>
+    <BR>
+    <B>Beispiel:</B><BR><BR>
+    <Beispiel>&lt;!--#DEFINE _News(_Date,_Text1,_Text2) #BLOCK --&gt;</Beispiel>
+    <!--#HTMLCODE PRE -->
+<TABLE BORDER=0 WIDTH="100%" CELLPADDING=3 CELLSPACING=4 BGCOLOR="#DDDDDD">
+   <TR>
+      <TD>
+         <B>_Date</B>
+      </TD>
+      <TD>
+         <FONT COLOR=red>_Text1</FONT>
+      </TD>
+      <TD>
+         <I>_Text2</I>
+      </TD>
+   </TR>
+</TABLE>
+<BR>
+    <!--#ENDHTMLCODE-->
+    <Beispiel>&lt;!--#ENDDEF--&gt;</Beispiel><BR>
+    </TD>
+</TR>

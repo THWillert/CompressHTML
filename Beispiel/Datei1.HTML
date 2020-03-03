@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+   <TITLE>Beispiel einer Navigation - Teil 1</TITLE>
+</HEAD>
+
+<!--## Hierin stehen die Macros für diese Datei !!! -->
+<!--#INCLUDE def1.inc -->
+
+<!--#DEFINE _Datei1 -->
+
+<BODY BGCOLOR="#BBBBBB">
+
+<!--#IFNDEF _Datei1 -->
+<P><FONT SIZE=+2 COLOR=red>Wer das hier lesen kann,<BR> sollte die Datei erst
+mit dem Preprozessor &uuml;bersetzen ;-) !</FONT><P>
+<!--#ENDIF-->
+
+<H1 ALIGN=CENTER>Beispiel einer Navigation</H1>
+<BR>
+Hier ist ein Beispiel wie man ganz einfach durch Dateien
+&quot;bl&auml;ttern&quot; kann. Beim einf&uuml;gen einer weiteren Seite, mu&szlig; hier nur
+noch eine Datei ge&auml;ndert werden.<BR>
+<HR>
+
+
+<!--#INCLUDE Navigation.inc -->
+
+<HR>
+<TABLE_def1>
+<TR><TD>
+Die eigentliche Funktion wird &uuml;ber #IFDEF- Bloecke in der Include- Datei
+<B>Navigation.inc</B> gebildet.<BR>
+Diese braucht dann nur noch an die passende Stelle gesetzt werden und die
+Definition f&uuml;r die #IFDEF- Abfrage gebildet werden:<BR>
+<Beispiel>
+<!--#HTMLCODE PRE -->
+&lt;!--#IFDEF _Datei1 --&gt;
+&lt;TABLE_nav>
+<TR>
+   <TD ALIGN=CENTER>
+   <A HREF="Datei3.HTML">Zum Ende</A>
+   <A HREF="Datei2.HTML">Weiter</A>
+   </TD>
+</TR>
+</TABLE>
+&lt;!--#ENDIF--&gt;
+
+&lt;!--#IFDEF _Datei2 --&gt;
+&lt;TABLE_nav>
+<TR>
+   <TD ALIGN=CENTER>
+   <A HREF="Datei1.HTML">Zur&uuml;ck</A>&nbsp;
+   <A HREF="Datei3.HTML">Weiter</A>
+</TD>
+</TR>
+</TABLE>
+&lt;!--#ENDIF--&gt;
+
+&lt;!--#IFDEF _Datei3 --&gt;
+&lt;TABLE_nav>
+<TR>
+   <TD ALIGN=CENTER>
+   <A HREF="Datei2.HTML">Zur&uuml;ck</A>&nbsp;
+   <A HREF="Datei1.HTML">Zum Anfang</A>&nbsp;
+</TD>
+</TR>
+</TABLE>
+&lt!--#ENDIF--&gt;
+<!--#ENDHTMLCODE-->
+</Beispiel>
+<BR><BR>
+Dasselbe gilt f&uuml;r die untenstehenden Seitenzahlen. Hier werden die
+Funktionen in <B>Seiten.inc</B> gebildet.<BR>
+<Beispiel>
+<!--#HTMLCODE PRE -->
+&lt;!--#IFDEF _Datei1 --&gt;
+&lt;TABLE_nav>
+<TR>
+   <TD ALIGN=CENTER>
+   <FONT FontHigh>1 </FONT>
+   <A HREF="Datei2.HTML">2</A>&nbsp;
+   <A HREF="Datei3.HTML">3</A>
+   </TD>
+</TR>
+</TABLE>
+&lt;!--#ENDIF--&gt;
+
+&lt;!--#IFDEF _Datei2 --&gt;
+&lt;TABLE_nav>
+<TR>
+   <TD ALIGN=CENTER>
+   <A HREF="Datei1.HTML">1</A>&nbsp;
+   <FONT FontHigh>2 </FONT>
+   <A HREF="Datei3.HTML">3</A>
+   </TD>
+</TR>
+</TABLE>
+&lt;!--#ENDIF--&gt;
+
+&lt;!--#IFDEF _Datei3 --&gt;
+&lt;TABLE_nav>
+<TR>
+   <TD ALIGN=CENTER>
+   <A HREF="Datei1.HTML">1</A>&nbsp;
+   <A HREF="Datei2.HTML">2</A>&nbsp;
+   <FONT FontHigh>3</FONT>
+   </TD>
+</TR>
+</TABLE>
+&lt;!--#ENDIF--&gt;
+<!--#ENDHTMLCODE-->
+</Beispiel>
+</TD></TR>
+</TABLE>
+<HR>
+<!--#INCLUDE Seiten.inc -->
+<HR>
+Die Angaben der Beispiele entsprechen nicht ganz dem Original, sonst w&auml;ren
+die Macros darin ebenfalls ersetzt worden.
+<HR>
+Vielen Dank an Christian Schanz, der mich auf diese beiden Ideen gebracht hat!
+
+</BODY>
+</HTML>

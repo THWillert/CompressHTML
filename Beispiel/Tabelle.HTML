@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+   <TITLE>Beispiel einer Tabellenfunktion</TITLE>
+</HEAD>
+
+<!--## Zellentrennzeichen muss vor! dem Einbinden der -->
+<!--## darauffolgenden Include- Datei definiert werden -->
+
+<!--#DEFINE \z 'MARKER' -->
+<!--#INCLUDE table_def.inc -->
+
+<BODY BGCOLOR="#CCCCCC">
+
+<!--#IFDEF _OK -->
+<P><FONT SIZE=+2 COLOR=red>
+Wer das hier lesen kann, sollte die Datei erst mit dem
+Preprozessor &uuml;bersetzen ;-) !
+</FONT><P>
+<!--#ENDIF-->
+
+<H1>Beispiel einer Tabellenfunktion</H1>
+<BR>
+Hier eine etwas einfachere Art Tabellen, mit einem Editor, zu schreiben.
+<BR>
+
+<TABLE('"90%"','1','5','3','"#AACCCC"')>
+
+<TRow> Zelle 1 \z Zelle 2 \z Zelle 3 \z Zelle 4 </TRow>
+<TRow> Zelle 5 \z Zelle 6 \z Zelle 7 \z Zelle 8 </TRow>
+<TRow> Wieder eine Zelle \z und noch mal eine \z die vorletzte \z und die letzte Zelle!</TRow>
+
+</TABLE>
+
+</BODY>
+</HTML>

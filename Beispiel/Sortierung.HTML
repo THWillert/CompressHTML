@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+   <TITLE>Beispiel der Sortierfunktion</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCCCCC">
+
+<!--#IFDEF _OK -->
+<P><FONT SIZE=+2 COLOR=red>
+Wer das hier lesen kann, sollte die Datei erst mit dem
+Preprozessor &uuml;bersetzen ;-) !
+</FONT><P>
+<!--#ENDIF-->
+
+<H1>Beispiel der Sortierfunktion</H1>
+<BR>
+<H2>Einfaches Sortieren von Zeilen:</H2>
+<BR>
+<UL>
+<!--#SORT-->
+   <LI>CLI</LI>
+   <LI>ADDBUFFERS</LI>
+   <LI>SHOW</LI>
+   <LI>ADDDATATYPES</LI>
+   <LI>LIST</LI>
+<!--#ENDSORT-->
+</UL>
+<HR>
+<H2>Sortieren nach URLS:</H2>
+<BR>
+<UL>
+<!--#SORT HREF-->
+<LI>12 <A HREF="http://www.3.net">Link 2</A>, das ist Link 2</LI>
+<LI>13 <A HREF="http://www.2.net">Link 1</A>, das ist Link 1</LI>
+<LI>14 <A HREF="http://www.4.net">Link 3</A>, das ist Link 3</LI>
+<LI>15 <A HREF="http://www.1.net">Link 4</A>, das ist Link 4</LI>
+<!--#ENDSORT-->
+</UL>
+<HR>
+<H2>Sortieren nach Links:</H2>
+<BR>
+<UL>
+<!--#SORT LINK-->
+<LI>12 <A HREF="http://www.3.net">Link 2</A>, das ist Link 2</LI>
+<LI>13 <A HREF="http://www.2.net">Link 1</A>, das ist Link 1</LI>
+<LI>14 <A HREF="http://www.4.net">Link 3</A>, das ist Link 3</LI>
+<LI>15 <A HREF="http://www.1.net">Link 4</A>, das ist Link 4</LI>
+<!--#ENDSORT-->
+</UL>
+</BODY>
+</HTML>

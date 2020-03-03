@@ -1,0 +1,26 @@
+<TR>
+    <TD_VT>
+    Datum an dem die Datei gespeichert wurde:<BR>
+    &lt;!--#FILEDATE--&gt;, oder<BR>
+    &lt;!--#FILEDATE Optionen--&gt;, oder<BR>
+    &lt;!--#FILEDATE 'Datei' Optionen--&gt;
+    </TD>
+    <TD>
+    Dient dazu das Datum, an dem angegebene bzw. die aktuelle<BR>
+    Datei gespeichert wurde, in verschiedenen Formaten<BR>
+    einzuf&uuml;gen.<BR><HR><BR>
+    <B>Beispiele:</B><BR><BR>
+    <Beispiel>&lt;!--#FILEDATE--&gt;</Beispiel> ergibt:<BR>
+    <!--#DATE--><BR><BR>
+    <Beispiel>&lt;!--#FILEDATE  dd. mm. yy --&gt;</Beispiel> ergibt:<BR>
+    <!--#DATE dd. mm. yy --><BR><BR>
+    <Beispiel>&lt;!--#FILEDATE '../CompressHTML' *D. MONTH YYYY --&gt;</Beispiel> ergibt:<BR>
+    <!--#DATE dd. MONTH yyyy --><BR><BR>
+    <Beispiel>&lt;!--#FILEDATE '../CompressHTML' *D. MONTH YYYY --&gt;</Beispiel> ergibt:<BR>
+    <!--#DATE dd. MONTH yyyy --><BR><BR>
+    wobei die Optionen beliebig kombiniert werden k&ouml;nnen.<BR><BR>
+    Es gilt das selbe zu beachten wie bei #DATE!<BR><BR>
+    Dies ist auch sinnvoll in folgenden META-Tag zu integrieren:<BR>
+    <Beispiel>&lt;META HTTP-EQUIV=&quot;Erstellt&quot; CONTENT=&quot;&lt;!--FILEDATE DD.MM.YYYY --&gt;&quot;&gt;</Beispiel><BR>
+    </TD>
+</TR>

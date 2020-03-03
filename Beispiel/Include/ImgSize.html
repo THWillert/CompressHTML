@@ -1,0 +1,29 @@
+<TR>
+    <TD_VT>
+    Dimensionen einer Grafik:<BR>
+    &lt;!--#IMGSIZE 'Datei' --&gt; oder<BR>
+    &lt;!--#IMGSIZE 'Datei' Optionen --&gt;<BR><BR>
+    Geht erst ab WB3.X,<BR>
+    da diese Funktion Datatypes ben&ouml;tigt!<BR>
+    </TD>
+    <TD>
+    F&uuml;gt an diese Stelle die Ausma&szlig;e der Grafikdatei ein.<BR><BR>
+    Der Dateipfad / Name mu&szlig; in einfachen Anf&uuml;hrungszeichen stehen.<BR>
+    Ohne Pfadangabe wird die Datei im Pfad der Quelldatei gesucht.<BR>
+    <B>Optionen:</B><CODE> WIDTH, HEIGHT</CODE><BR><HR><BR>
+    <B>Beispiele:</B><BR><BR>
+    <Beispiel>&lt;!--#IMGSIZE 'madeamiga.gif' --&gt;</Beispiel> ergibt:<BR>
+    <!--#IMGSIZE 'madeamiga.gif' --><BR><BR>
+    <Beispiel>&lt;!--#IMGSIZE 'madeamiga.gif' WIDTH --&gt;</Beispiel> ergibt:<BR>
+    <!--#IMGSIZE 'madeamiga.gif' WIDTH --><BR><BR>
+    <Beispiel>&lt;!--#IMGSIZE 'madeamiga.gif' WIDTH X HEIGHT --&gt;</Beispiel> ergibt:<BR>
+    <!--#IMGSIZE 'madeamiga.gif' WIDTH X HEIGHT --><BR><BR>
+    und hier die passende Grafik:<BR><BR>
+    <IMG SRC='madeamiga.gif' ALT="Made with Amiga" BORDER=0 <!--#IMGSIZE 'madeamiga.gif' -->><BR>
+    <BR>
+    Die hier vermutlich nicht zu sehen ist ...<BR><BR>
+    Immer noch zu umst&auml;ndlich?<BR>
+    Kein Problem. In der Include- Datei <B>std_def.inc</B> steht folgendes Macro:<BR>
+    <Beispiel>&lt;!--#DEFINE &lt;IMG(v1,v2,v3)&gt; '&lt;IMG SRC=&quot;v1&quot; ALT=&quot;v2&quot; &lt;!--#IMGSIZE 'v1' --&gt; BORDER=v3 &gt;' --&gt;</Beispiel><BR>
+    </TD>
+</TR>

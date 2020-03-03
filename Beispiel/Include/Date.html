@@ -1,0 +1,24 @@
+<TR>
+    <TD_VT>
+    Aktuelles Datum:<BR>
+    &lt;!--#DATE--&gt;, oder<BR>
+    &lt;!--#DATE Optionen--&gt;
+    </TD>
+    <TD>
+    Dient dazu das aktuelle Datum, in verschiedenen Formaten, einzuf&uuml;gen.<BR><HR><BR>
+    <B>Beispiele:</B><BR><BR>
+    <Beispiel>&lt;!--#DATE--&gt;</Beispiel> ergibt:<BR>
+    <!--#DATE--><BR><BR>
+    <Beispiel>&lt;!--#DATE  *d. mm. yy --&gt;</Beispiel> ergibt:<BR>
+    <!--#DATE *d. mm. jj --><BR><BR>
+    <Beispiel>&lt;!--#DATE  DD. MONTH YYYY --&gt;</Beispiel> ergibt:<BR>
+    <!--#DATE TT. MONTH JJJJ --><BR><BR>
+    Heute ist<Beispiel>&lt;!--#DATE  DAY --&gt;</Beispiel> der <Beispiel>&lt;!--#DATE  DD. MONTH YYYY --&gt;</Beispiel> ergibt:<BR>
+    Heute ist <!--#DATE DAY  --> der <!--#DATE dd. MONTH yyyy --><BR><BR>
+    wobei die Optionen beliebig kombiniert werden k&ouml;nnen.<BR><BR>
+    Text sollte nicht verwendet werden, sonst passiert folgendes:<BR>
+    <Beispiel>&lt;!--#DATE  Aktuelles Jahr: yyyy --&gt;</Beispiel> ergibt:<BR>
+    <!--#DATE Aktuelles Jahr: yyyy -->, <BR>
+    genau er wird in Gro&szlig;buchstaben umgewandelt.
+    </TD>
+</TR>
