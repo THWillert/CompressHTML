@@ -8,6 +8,8 @@ Type:         comm/www
 Requires:     WB3.x, tritonrexx.library, rexxMOOS.library, rexxlocaldates.library  
 Kurz:         HTML (De)Kompressor/Preprozessor  
 
+![CompressHTML](/Images/CompressHTML.png)
+
 
 Allgemeines:
 - Triton- Oberfläche
