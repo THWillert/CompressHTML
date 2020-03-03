@@ -1,0 +1,11 @@
+Wichtig!
+
+Bevor das Programm über das Icon gestartet wird, bitte
+erst das ARexx-Programm rx-patcher.rexx starten (liegt im
+gleichnahmigen Verzeichnis bei!).
+
+Dieses erzeugt in REXXC ein neues (verändertes) RX,
+das RXNIL heißt, und kein Konsolen-Fenster mehr öffnet.
+
+Die Dokumentation ist in HTML.
+
